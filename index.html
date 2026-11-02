@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OneHealth is an integrated hospital ERP that connects reception, doctors, labs, pharmacy and patients.">
+  <title>OneHealth | Connected Hospital Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="OneHealth home"><span class="brand-mark">+</span>One<b>Health</b></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#portals">Portals</a>
+        <a href="#workflow">How it works</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="button button-primary" href="#contact">Book a demo</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Hospital ERP for clinics and hospitals</p>
+          <h1>One system for every step of patient care.</h1>
+          <p class="lead">OneHealth connects reception, doctors, laboratory, pharmacy and patients, so each team sees the same record and nothing gets re-entered.</p>
+          <div class="hero-actions">
+            <a class="button button-line" href="#portals">See the portals</a>
+          </div>
+          <ul class="hero-points">
+            <li>Online and walk-in booking</li>
+            <li>Lab and pharmacy linked to prescriptions</li>
+          </ul>
+        </div>
+        <div class="frame">
+          <div class="frame-bar"><i></i><i></i><i></i><span>OneHealth · Reception</span></div>
+          <img src="assets/img/reception.jpeg" alt="OneHealth reception desk showing today's appointments, check-ins, wait time and collections" width="1600" height="805">
+        </div>
+      </div>
+    </section>
+
+    <section class="section portals" id="portals">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Role-based portals</p>
+          <h2>A workspace for every team, <em>on one record.</em></h2>
+          <p>Each role gets a screen built for its own work. Select a portal to see it.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="OneHealth portals">
+          <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true">Reception</button>
+          <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false">Doctor</button>
+          <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false">Laboratory</button>
+          <button class="tab" role="tab" id="t4" aria-controls="p4" aria-selected="false">Pharmacy</button>
+          <button class="tab" role="tab" id="t5" aria-controls="p5" aria-selected="false">Patient</button>
+        </div>
+
+        <div class="panel active" role="tabpanel" id="p1" aria-labelledby="t1">
+          <div>
+            <h3>Reception</h3>
+            <p>Register patients, book appointments and track the day from one screen.</p>
+            <ul><li>Live counts for appointments, check-ins and waiting time</li><li>Admissions and insurance claims alongside appointments</li><li>Search by name, patient ID, ID card or phone, or scan a QR code</li><li>Daily collections and bill status per visit</li></ul>
+          </div>
+          <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Reception</span></div><img src="assets/img/reception.jpeg" alt="Reception portal with appointment list and status filters" loading="lazy" width="1600" height="805"></div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+          <div>
+            <h3>Doctor</h3>
+            <p>Review the patient, vitals and results, then prescribe and order tests without leaving the consultation.</p>
+            <ul><li>Today's vitals and trends beside the notes</li><li>Lab results reviewed in the same visit</li><li>Diagnosis, examination, advice and follow-up</li><li>Prescriptions and test orders go straight to pharmacy and reception</li></ul>
+          </div>
+          <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Practitioner</span></div><img src="assets/img/doctor.jpeg" alt="Doctor consultation screen with vitals, diagnosis and orders" loading="lazy" width="1600" height="762"></div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+          <div>
+            <h3>Laboratory</h3>
+            <p>Follow every sample from collection to released result.</p>
+            <ul><li>Stages from sample pending to result entry, approval and release</li><li>Scan a barcode or type a sample ID to find a test</li><li>Payment status shown on each test</li><li>Outpatient, inpatient and priority filters; radiology in the same module</li></ul>
+          </div>
+          <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Laboratory</span></div><img src="assets/img/lab.jpeg" alt="Laboratory portal listing samples, tests and result status" loading="lazy" width="1600" height="761"></div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+          <div>
+            <h3>Pharmacy</h3>
+            <p>Turn prescriptions into dispensed medicines with clear billing status.</p>
+            <ul><li>Queue of prescriptions to dispense, partly dispensed and completed</li><li>Low-stock flags before you issue</li><li>Outpatient and inpatient prescriptions in one list</li><li>Paid, not billed and inpatient bill status per order</li></ul>
+          </div>
+          <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Pharmacy</span></div><img src="assets/img/pharmacy.jpeg" alt="Pharmacy portal listing prescriptions to dispense" loading="lazy" width="1600" height="763"></div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5" hidden>
+          <div>
+            <h3>Patient portal</h3>
+            <p>Patients see their own appointments, vitals and reports, and can book a visit online.</p>
+            <ul><li>Upcoming appointments with QR check-in and token number</li><li>Latest vitals and recent lab reports</li><li>Medicines, procedures, hospital stays and bills</li><li>Book an appointment by picking a doctor and a free time</li></ul>
+          </div>
+          <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Patient portal</span></div><img src="assets/img/patient.jpeg" alt="Patient portal overview with appointments, vitals and lab reports" loading="lazy" width="1600" height="900"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow" id="workflow">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">The patient journey</p>
+          <h2>One visit, every team <em>in sync.</em></h2>
+          <p>Information moves forward automatically, so no team waits on paperwork.</p>
+        </div>
+        <ol class="journey">
+          <li><h3>Book and register</h3><p>The patient books online or registers at reception and gets a token.</p><small>Patient, reception</small></li>
+          <li><h3>Record vitals</h3><p>Nursing records vitals, and the doctor sees them right away.</p><small>Nursing</small></li>
+          <li><h3>Consult and prescribe</h3><p>The doctor records the visit and creates prescriptions or lab orders.</p><small>Doctor</small></li>
+          <li><h3>Pay and test</h3><p>The patient pays, gives a sample and the lab processes it.</p><small>Reception, lab</small></li>
+          <li><h3>Results and medicines</h3><p>Results reach doctor and patient, and pharmacy dispenses the prescription.</p><small>Lab, pharmacy, patient</small></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Why OneHealth</p>
+          <h2>Built so everyday care <em>flows.</em></h2>
+        </div>
+        <div class="benefit-grid">
+          <article><h3>One patient record</h3><p>Vitals, notes, orders and bills sit in one place for every team.</p></article>
+          <article><h3>Fewer hand-offs</h3><p>Orders reach the lab and pharmacy the moment the doctor saves them.</p></article>
+          <article><h3>Clear queues</h3><p>Each desk sees what is waiting, what is paid and what is done.</p></article>
+          <article><h3>Informed patients</h3><p>Patients check appointments, results and bills on their phone.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <h2>See OneHealth on <em>your workflow.</em></h2>
+          <p>Book a demo and we will walk through the portals your teams use.</p>
+        </div>
+        <a class="button button-primary" href="mailto:info@onehealth.example?subject=OneHealth%20Demo%20Enquiry">Request a demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <a class="brand" href="#home"><span class="brand-mark">+</span>One<b>Health</b></a>
+      <p>Connected hospital management. Better-coordinated care.</p>
+      <span>© 2026 OneHealth. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var tabs = document.querySelectorAll('.tab');
+      function show(tab) {
+        tabs.forEach(function (t) {
+          var on = t === tab, p = document.getElementById(t.getAttribute('aria-controls'));
+          t.setAttribute('aria-selected', on);
+          t.tabIndex = on ? 0 : -1;
+          p.hidden = !on;
+          p.classList.toggle('active', on);
+        });
+      }
+      tabs.forEach(function (t, i) {
+        t.addEventListener('click', function () { show(t); });
+        t.addEventListener('keydown', function (e) {
+          var n = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : null;
+          if (n === null) return;
+          n = (n + tabs.length) % tabs.length; tabs[n].focus(); show(tabs[n]);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
